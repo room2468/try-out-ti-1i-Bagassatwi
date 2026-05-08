@@ -5,7 +5,7 @@
 # Read expression from stdin
 read -r expression
 
-result=$(echo $expression | bc)
+result=$(echo $((expression)) | bc)
 # Calculate result using bc (supports +, -, *, /)
 # TODO: evaluate $expression using bc command and store in $result variable
 # $result = $($expression | bc)
